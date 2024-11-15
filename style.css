@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background */
+    color: #72b3f3; /* Light gray text for readability */
+    line-height: 1.6;
+    background-image: url('stars-background.jpg'); /* Subtle starry background */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+
+/* Header Styles */
+.header {
+    background: #212121; /* Dark background for header */
+    color: #00bcd4; /* Teal text for contrast */
+    padding:30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #f5f5f5;
+    padding-bottom: 15px;
+}
+
+
+
+/* Navigation Styles */
+.nav {
+    background: #333;
+    overflow: hidden;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #00bcd4;
+    color: #212121;
+    transform: scale(1.05);
+}
+
+
+.category {
+    background-color: #2a3b4c;
+    padding: 25px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+.category img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.category h3 {
+    color: #00bcd4;
+    font-size: 1.5em;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+    border-top: 4px solid #00bcd4;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Subtle Animations */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 8px #00bcd4, 0 0 12px #00bcd4, 0 0 20px #00bcd4;
+    }
+    50% {
+        text-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4;
+    }
+    100% {
+        text-shadow: 0 0 8px #00bcd4, 0 0 12px #00bcd4, 0 0 20px #00bcd4;
+    }
+}
+
+h2, .nav a:hover, .category h3 {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
